@@ -1,8 +1,19 @@
 site_name: "合意問題の覚書"
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+
+nav:
+  - ホーム: index.md
+  - 用語解説: glossary.md
+  - 問題:
+    - problems/index.md
+    - 非同期ビザンチン合意問題: problems/aba.md
+    - 多値ビザンチン合意問題: problems/mba.md
 
 markdown_extensions:
   - markdown_katex:
-      # KaTeX用のフォントCSSを自動で読み込む設定 (推奨)
       insert_fonts_css: true
