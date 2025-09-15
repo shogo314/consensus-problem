@@ -1,1 +1,8 @@
-site_name: My Docs
+site_name: "合意問題の覚書"
+theme:
+  name: material
+
+markdown_extensions:
+  - markdown_katex:
+      # KaTeX用のフォントCSSを自動で読み込む設定 (推奨)
+      insert_fonts_css: true
